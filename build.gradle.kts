@@ -13,7 +13,7 @@ plugins {
     id("org.jetbrains.dokka") version "2.1.0"
     id("io.gitlab.arturbosch.detekt") version "1.23.8"
     id("org.jlleitschuh.gradle.ktlint") version "14.0.1"
-    id("com.github.jk1.dependency-license-report") version "3.0.1"
+    id("com.github.jk1.dependency-license-report") version "3.1.4"
     id("com.github.spotbugs") version "6.5.8"
     id("com.diffplug.spotless") version "8.1.0"
     application
