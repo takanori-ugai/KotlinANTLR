@@ -98,7 +98,7 @@ tasks {
         dependsOn(test) // tests are required to run before generating the report
     }
 
-    val execute by registering(JavaExec::class) {
+    register<JavaExec>("execute") {
         group = "application"
         mainClass.set(
             if (project.hasProperty("mainClass")) {
@@ -110,7 +110,7 @@ tasks {
         classpath = sourceSets.main.get().runtimeClasspath
     }
 
-    val runActionScriptSample by registering(JavaExec::class) {
+    register<JavaExec>("runActionScriptSample") {
         group = "application"
         description = "Runs the ActionScript ANTLR sample validator."
         dependsOn("classes")
