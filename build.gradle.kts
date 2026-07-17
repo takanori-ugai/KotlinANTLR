@@ -46,7 +46,7 @@ val generateKotlinGrammarSource =
 
 dependencies {
     implementation("com.strumenta:antlr-kotlin-runtime:1.0.10")
-    testImplementation("org.junit.jupiter:junit-jupiter:6.1.1")
+    testImplementation("org.junit.jupiter:junit-jupiter:6.1.2")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher:6.1.2")
 }
 
