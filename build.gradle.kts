@@ -191,3 +191,9 @@ dokka.dokkaSourceSets {
         enableKotlinStdLibDocumentationLink.set(false)
     }
 }
+
+tasks.shadowJar {
+    filesMatching("META-INF/*.kotlin_module") {
+        duplicatesStrategy = DuplicatesStrategy.INCLUDE
+    }
+}
