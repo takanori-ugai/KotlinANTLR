@@ -6,7 +6,7 @@ import org.jlleitschuh.gradle.ktlint.reporter.ReporterType
 plugins {
     kotlin("jvm") version "2.4.10"
     kotlin("plugin.serialization") version "2.4.10"
-    id("com.strumenta.antlr-kotlin") version "1.0.10"
+    id("com.strumenta.antlr-kotlin") version "1.0.12"
     java
     id("com.gradleup.shadow") version "9.5.1"
     jacoco
@@ -45,7 +45,7 @@ val generateKotlinGrammarSource =
     }
 
 dependencies {
-    implementation("com.strumenta:antlr-kotlin-runtime:1.0.10")
+    implementation("com.strumenta:antlr-kotlin-runtime:1.0.12")
     testImplementation("org.junit.jupiter:junit-jupiter:6.1.2")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher:6.1.2")
 }
