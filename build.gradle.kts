@@ -6,7 +6,7 @@ import org.jlleitschuh.gradle.ktlint.reporter.ReporterType
 plugins {
     kotlin("jvm") version "2.4.20"
     kotlin("plugin.serialization") version "2.4.20"
-    id("com.strumenta.antlr-kotlin") version "1.0.13"
+    id("com.strumenta.antlr-kotlin") version "1.0.14"
     java
     id("com.gradleup.shadow") version "9.6.1"
     jacoco
