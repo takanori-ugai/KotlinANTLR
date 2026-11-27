@@ -41,3 +41,6 @@ jobs:
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
         slug: takanori-ugai/KotlinANTLR
+        files: build/reports/jacoco/test/jacocoTestReport.xml
+        disable_search: true
+        fail_ci_if_error: true
