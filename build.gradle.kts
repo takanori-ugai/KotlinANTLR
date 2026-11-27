@@ -96,6 +96,9 @@ tasks {
 
     jacocoTestReport {
         dependsOn(test) // tests are required to run before generating the report
+        reports {
+            xml.required.set(true)
+        }
     }
 
     register<JavaExec>("execute") {
